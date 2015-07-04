@@ -1,0 +1,135 @@
+img {
+  width: 100%;
+}
+
+
+.img {
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 18px 0px;
+}
+
+
+.rounded {
+  height: 258px;
+}
+
+
+
+.zoom {
+  height: 258px;
+
+  &:hover {
+    background-color: @black-color;
+    background-image: url(../pict/zoom-in.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    
+  }
+
+  & img {
+
+    &:hover {
+      opacity: 0.5;
+      transition: all .6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+
+.caption {
+  position: relative;
+  height: 258px;
+
+
+  figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+
+     &:hover {
+       opacity: 1;
+       transition: all .6s cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+
+    span {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: @white-color;
+      font-size: @font-size-small;
+    }
+  }
+}
+
+
+
+/*-----------------------------------*\TWIST\*-----------------------------------*/
+
+
+
+
+.twist {
+  position: relative;
+  margin: 10px auto;
+  width: 258px;
+  height: 258px;
+  z-index: 1;
+  perspective:1000;
+
+
+  &__block {
+    position: relative;
+    height: 258px;
+    transform-style: preserve-3d;
+    transition: all 0.6s cubic-bezier(0.24, 1.05, 0.85, 1.17);
+    margin: 18px 0px;
+  }
+
+
+  &:hover .twist__block {
+    transform: rotateY(180deg);
+  }
+}
+
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+  &.twist__back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 102px 20px;
+    color: @text-color;
+    text-align: center;
+    background-color: @white-color;
+    border: 1px solid @gray-lighter;
+    border-radius: 5px;
+    font-size: @font-size-small;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

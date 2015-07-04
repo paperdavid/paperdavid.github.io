@@ -1,0 +1,102 @@
+.input {
+  width: 20em;
+  padding: 10px 14px;
+  border-radius: 5px;
+  border: 1px solid @gray-light;
+  color: @gray-light;
+  margin: 0.5em 0;
+  opacity: .4;
+
+    &:focus {
+    border: 1px solid @brand-default-light;
+    color: @brand-default;
+    opacity: 1;
+
+    &::-webkit-input-placeholder {color:@brand-default-light;}
+
+  }
+
+  &-focus {
+    border: 1px solid @brand-default-light;
+    color: @brand-default;
+    opacity: 1;
+  }
+
+  &-error {
+  border: 1px solid @brand-danger;
+  opacity: 1;
+
+  }
+
+  &-correct {
+  border: 1px solid @brand-success;
+  opacity: 1;
+
+    &:before {
+      content: '\f00d';
+      font-size: 5px;
+      font-family: FontAwesome;
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+}
+
+::-webkit-input-placeholder {color:@brand-default-light;}
+::-webkit-value {
+  color: #ff0;
+}
+
+
+.input-error-icon:after {
+      content: '\f00d';
+      font-size: 19px;
+      font-family: FontAwesome; 
+      color: @brand-danger;
+      position: absolute;
+      top: 1em;
+      right: 3em;
+}
+
+.input-correct-icon:after {
+      content: '\f00c';
+      font-size: 19px;
+      font-family: FontAwesome; 
+      color: @brand-success;
+      position: absolute;
+      top: 1em;
+      right: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

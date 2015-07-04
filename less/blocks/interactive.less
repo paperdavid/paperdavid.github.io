@@ -1,0 +1,64 @@
+.show {
+  opacity: 1;
+}
+
+.pagination {
+
+
+  &__list {
+    text-align: center;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+  display: inline-block;
+  margin: 0 5px;
+  background-image: url(../pict/point.png);
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
+  }
+}
+
+li.pagination__prev {
+    background-image: url(../pict/prev.png);
+    width: 8px;
+    height: 12px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+li.pagination__next {
+    background-image: url(../pict/prev.png);
+    transform: rotate(180deg);
+    width: 8px;
+    height: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+  }  
+
+
+.fa-caret-up:before {
+        content: "\f0d8";
+        position: absolute;
+        top: -40px;
+        color: @brand-danger;
+        left: -100px;
+        font-size: 30px;
+      }
+
+
+
+
+
+
+
+

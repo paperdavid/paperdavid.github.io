@@ -1,0 +1,271 @@
+form {
+    margin: .5em 0;
+    position: relative;
+}
+
+
+
+
+
+/*-----------------------------------*\Tumbler\*-----------------------------------*/
+
+
+.tumbler-field {
+  .on {
+    display: none;
+  }
+  .off {
+    display: inline-block;
+  }
+  input:checked + .text .on {
+    display: inline-block;
+  }
+  input:checked + .text .off {
+    display: none;
+  }
+  
+  .text {
+    display: inline-block;
+    padding-left: 3em;
+    position: relative;
+    box-sizing: border-box;
+
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2em;
+      height: 1em;
+      background: @brand-default-lighter;
+      border-radius: 1em;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: .9em;
+      height: .9em;
+      background: @white-color;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid @brand-default-lighter;
+    }
+  }
+  
+  input:checked + .text {
+    &:after {
+      left: 1em;
+      border: 1px solid @brand-success;
+    }
+
+    &:before {
+      background-color: @brand-success;
+      transition: all 0.3s ease-in-out;
+
+    }
+  }
+  
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+
+form.not-active {
+  opacity: .6;
+}
+
+
+
+
+
+/*-----------------------------------*\radio\*-----------------------------------*/
+
+
+
+
+
+.radio-field {
+  .on {
+    display: none;
+  }
+  .off {
+    display: inline-block;
+  }
+  input:checked + .text .on {
+    display: inline-block;
+  }
+  input:checked + .text .off {
+    display: none;
+  }
+  
+  .text {
+    display: inline-block;
+    padding-left: 2em;
+    position: relative;
+    box-sizing: border-box;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      background: @white-color;
+      border-radius: 50%;
+      border: 1px solid @gray-light;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+
+    }
+  }
+  
+  input:checked + .text {
+    &:after {
+      content: '';
+      
+      background-color: @brand-danger;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      margin: 6px;
+
+    }
+
+    &:before {
+      background-color: @white-color;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid @brand-danger;
+
+    }
+  }
+  
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*\Чеки\*-----------------------------------*/
+
+
+
+.checkbox-field {
+  .on {
+    display: none;
+  }
+  .off {
+    display: inline-block;
+  }
+  input:checked + .text .on {
+    display: inline-block;
+  }
+  input:checked + .text .off {
+    display: none;
+  }
+  
+  .text {
+    display: inline-block;
+    padding-left: 2em;
+    position: relative;
+    box-sizing: border-box;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      background: @white-color;
+      border-radius: .3em;
+      border: 1px solid @gray-light;
+    }
+    
+    &:after {
+      contesdnt: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      border-radius: .3em;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  
+  input:checked + .text {
+    &:after {
+      content: '\f00c';
+      font-family: FontAwesome;
+      color: @brand-danger;
+      margin: 4px;
+      font-size: 10px;
+
+    }
+
+    &:before {
+      background-color: @white-color;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid @brand-danger;
+
+    }
+  }
+  
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

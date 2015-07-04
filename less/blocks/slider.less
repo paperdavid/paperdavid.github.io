@@ -1,0 +1,49 @@
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-carousel {
+    margin: 18px 0px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background: @brand-danger;
+}
+
+
+.owl-controls {
+  position: relative;
+}
+
+
+.owl-pagination {
+
+  &:before {
+      content: '\f053';
+      color: #fc6e51;
+      display: inline-block;
+      position: absolute;
+      top: 4px;
+      left: 200px;
+      font-weight: bold;
+      font-size: 1em;
+      font-family: FontAwesome;
+      cursor: pointer;
+  }
+
+  &:after {
+      content: '\f054';
+      color: #fc6e51;
+      display: inline-block;
+      position: absolute;
+      top: 4px;
+      right: 200px;
+      font-weight: bold;
+      font-size: 1em;
+      font-family: FontAwesome;
+      cursor: pointer;
+    }
+
+}

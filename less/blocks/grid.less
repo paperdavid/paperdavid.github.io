@@ -1,0 +1,108 @@
+.generate-columns(@n, @i: 1) when (@i =< @n) { // Условие выполнения!
+// @n — количество колонок
+// @i — внутренний счетчик от 1 до @n
+// Собственно, генерация
+.column-@{i} {
+width: (@i * 100% / @n);
+}
+// Рекурсовный самовызов с цвеличенным на 1 счетчиком
+.generate-columns(@n, (@i + 1));
+}
+// Вызываем примесь
+.generate-columns(12);
+
+
+.inner {
+    background-color: @white-color;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 18px 0;
+}
+
+div[class*="column"] {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 18px;
+}
+
+* {
+  user-select: none;
+  box-sizing: border-box;
+  
+  *:focus {
+    outline: none;
+  }
+
+}
+
+
+body {
+  background-color: @body-bg;
+}
+
+
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+
+
+.row {
+  overflow: hidden;
+  margin-left: -18px;
+  margin-right: -18px;  
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+.clearfix {
+  clear: both;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+
+.pull-left {float: left;}
+.pull-right {float: right;}
+
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+
+
+
+
+.column-example {
+  width: 62px;
+  height: 34px;
+  background-color: @blue-base;
+  margin: 0 18px;
+}
+
+
+
+.box {
+  margin-bottom: 80px;
+}
+
+
+.margin-left {
+  margin-left: -28px;
+}
+
+
+
+
+

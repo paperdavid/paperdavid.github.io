@@ -1,0 +1,85 @@
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+@white-color:            #fff;  
+@black-color:            #000;   
+@blue-base:              #b3d4f9;                               // Голубой
+@gray:                   #3f3f3f;                               // Темно-серый текст
+@gray-light:             #d8dadc;                               // Светло-серый hr
+@gray-lighter:           #cacaca;                               // #eee
+
+@brand-success:         #a0d468;                                // Зеленый
+@brand-default:         #536167;                                // Серый
+@brand-danger:          #fc6e51;                                // Оранжервый
+
+
+@brand-success-light:   lighten(@brand-success, 5%);            // Светло-Зеленый
+@brand-default-light:   lighten(@brand-default, 5%);            // Светло-серый
+@brand-danger-light:    lighten(@brand-danger, 5%);             // Светло-оранжевый
+
+
+@brand-success-lighter:   lighten(@brand-success, 55%);            // Светло-Светло-Зеленый
+@brand-default-lighter:   lighten(@brand-default, 55%);            // Светло-Светло-серый
+@brand-danger-lighter:    lighten(@brand-danger, 55%);             // Светло-Светло-оранжевый
+
+
+@brand-success-dark:    darken(@brand-success,15%);             // Темно-Зеленый
+@brand-default-dark:    darken(@brand-default,15%);             // Темно-серый
+@brand-danger-dark:     darken(@brand-danger,15%);              // Темно-оранжевый
+
+
+@brand-success-hover-light:   lighten(@brand-success-dark, 10%); // Светло-Зеленый
+@brand-default-hover-light:   lighten(@brand-default-dark, 10%); // Светло-серый
+@brand-danger-hover-light:    lighten(@brand-danger-dark, 10%);  // Светло-оранжевый
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #f0f2f5;
+//** Global text color on `<body>`.
+@text-color:            @gray;
+
+//** Global textual link color.
+@link-color:            @white-color;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      @brand-danger;
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family:             'Roboto', Arial, sans-serif;
+
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.9375)); // ~15px
+@font-size-xs:            ceil((@font-size-base * 0.875)); // ~14px
+
+@font-size-h1:            floor((@font-size-base * 2)); // ~36px
+@font-size-h2:            floor((@font-size-base * 1.75)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.375)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components1 like buttons.
+@line-height-base:        1.428571429; // 20/14
+@line-height-large:       1.428571429; // 22
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    'Myriad Pro', Arial, sans-serif;;
+@headings-font-weight:    500;
+@headings-line-height:    @line-height-base;
+@headings-color:          inherit;
+
+
+@font-weight:             normal;
+@font-weight-bold:        bold;
+@font-weight-italic:      italic;
