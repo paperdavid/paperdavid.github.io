@@ -392,7 +392,7 @@ th {
 }
 .inner {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 18px;
   border-radius: 5px;
   margin: 18px 0;
 }
@@ -823,12 +823,12 @@ li.pagination__next {
 }
 .tab {
   position: relative;
-  min-height: 210px;
+  min-height: 14em;
   box-sizing: content-box;
 }
 .tab__titles {
   padding: 0;
-  margin: 0;
+  margin: 12px 0;
 }
 .tab__titles:after {
   content: '';
@@ -836,8 +836,8 @@ li.pagination__next {
   display: block;
   position: absolute;
   top: 66px;
-  left: -13px;
-  right: -4px;
+  left: -25px;
+  right: 7px;
   margin: 0 3em;
 }
 .tab__title {
@@ -1051,6 +1051,55 @@ form.not-active {
   z-index: -1;
   opacity: 0;
 }
+.ui-widget {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+}
+.ui-widget-content {
+  background: #ffffff;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: #536167;
+  border: none;
+  color: #fff;
+  font-weight: normal;
+}
+.ui-state-default .ui-icon:after {
+  content: '\f00d';
+  font-size: 9px;
+  font-family: FontAwesome;
+  color: #ffffff;
+  position: absolute;
+  top: -0.1em;
+  right: 0;
+  width: 12px;
+}
+ul.tagit li {
+  margin: .2em;
+}
+ul.tagit {
+  padding: 3px;
+}
+.ui-corner-all {
+  border-radius: 5px;
+}
+ul.tagit input[type="text"] {
+  width: 100%;
+}
+ul.tagit li.tagit-new {
+  width: 20%;
+}
+ul.tagit {
+  margin: 0;
+}
+ul.tagit li.tagit-choice-editable {
+  padding: .5em 2em .5em .5em;
+}
+ul.tagit li.tagit-new {
+  padding: 0.5em 0 .5em 0;
+}
 .input {
   width: 20em;
   padding: 10px 14px;
@@ -1101,7 +1150,8 @@ form.not-active {
   color: #fc6e51;
   position: absolute;
   top: 1em;
-  right: 3em;
+  right: 1em;
+  width: 18px;
 }
 .input-correct-icon:after {
   content: '\f00c';
@@ -1110,7 +1160,7 @@ form.not-active {
   color: #a0d468;
   position: absolute;
   top: 1em;
-  right: 3em;
+  right: 1em;
 }
 #owl-demo .item img {
   display: block;
@@ -1126,7 +1176,7 @@ form.not-active {
 .owl-controls {
   position: relative;
 }
-.owl-pagination:before {
+.owl-prev:before {
   content: '\f053';
   color: #fc6e51;
   display: inline-block;
@@ -1138,7 +1188,7 @@ form.not-active {
   font-family: FontAwesome;
   cursor: pointer;
 }
-.owl-pagination:after {
+.owl-next:after {
   content: '\f054';
   color: #fc6e51;
   display: inline-block;

@@ -1,0 +1,59 @@
+.ui-widget {
+  font-family: @font-family;
+  font-size: @font-size-xs;
+
+  &-content {
+    background: @white-color;
+  }
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: @brand-default;
+  border: none;
+  color: #fff;
+  font-weight: @font-weight;
+}
+
+.ui-state-default .ui-icon:after {
+  content: '\f00d';
+  font-size: 9px;
+  font-family: FontAwesome;
+  color: @white-color;
+  position: absolute;
+  top: -.1em;
+  right: 0;
+  width: 12px;
+}
+
+ul.tagit li {
+  margin: .2em;
+}
+
+ul.tagit {
+  padding: 3px;
+}
+.ui-corner-all {
+  border-radius: 5px;
+}
+
+
+ul.tagit input[type="text"] {
+  width: 100%;
+}
+
+
+ul.tagit li.tagit-new {
+  width: 20%;
+}
+
+ul.tagit {
+  margin: 0;
+}
+
+
+ul.tagit li.tagit-choice-editable {
+  padding: .5em 2em .5em .5em;
+}
+
+ul.tagit li.tagit-new {
+  padding: 0.5em 0 .5em 0;
+}

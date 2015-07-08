@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>UI kit | David</title>
+   <link rel="stylesheet" href="css/jquery-ui.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/owl.carousel.css">
    <link rel="stylesheet" href="css/owl.theme.css">
@@ -233,8 +234,9 @@
         
 
                                                                       <!-- Inputs -->
-      <div class="column-4 inner">
-
+      <div class="column-4">
+        <div class="inner">
+          
             <form action="#">
                 <input class="input input-default" type="text" value="" placeholder="Полковнику никто не пишет"/>
             </form>  
@@ -251,14 +253,27 @@
                 <span class="input-correct-icon"></span>
             </form>  
 
+        </div>
       </div>
    
 
 
                                                                       <!-- Tags -->
 
-      <div class="column-4 inner">
-      
+      <div class="column-4">
+        <div class="inner">
+                  <ul id="myTags" class="tagit ui-widget ui-widget-content ui-corner-all">
+          <li class="tagit-choice ui-widget-content ui-state-default ui-corner-all tagit-choice-editable">
+            <span class="tagit-label">Harder</span>
+          </li>
+          <li class="tagit-choice ui-widget-content ui-state-default ui-corner-all tagit-choice-editable">
+            <span class="tagit-label">Better</span>
+          </li>
+          <li class="tagit-choice ui-widget-content ui-state-default ui-corner-all tagit-choice-editable">
+            <span class="tagit-label">Faster</span>
+          </li>
+        </ul>
+        </div>
       </div>
 
 
@@ -266,7 +281,8 @@
                                                                       <!-- Радио -->
 
       <div class="column-4">
-        <div class="row inner">
+        <div class="inner">
+          <div class="row">
 
 
           <div class="column-6">
@@ -330,10 +346,12 @@
 
           </div>
         </div>
+        </div> 
 
 
                                                                       <!-- Тумблеры -->
-        <div class="row inner">
+        <div class="inner">
+          <div class="row">
           <div class="column-6">
 
             <form action="#" class="not-active">
@@ -369,6 +387,7 @@
 
           </div>
         </div>
+        </div>
       </div>
     </div>
 
@@ -385,15 +404,19 @@
 
 
   <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <script src="js/tooltip.js"></script>
-  <script src="js/tabs.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/tag-it.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/tooltip.js"></script>
+  <script type="text/javascript" src="js/tabs.js"></script>
 
+
+<!-- Owl Carousel -->
   <script>
     $(document).ready(function() {
           $("#owl-demo").owlCarousel({
             
-            navigation : false, // Show next and prev buttons
+            navigation : true, // Show next and prev buttons
             slideSpeed : 300,
             paginationSpeed : 400,
             singleItem:true
@@ -406,10 +429,27 @@
           owl.prev();
         });
       });
-
-
-
   </script>
+
+
+<!-- Выключение ссылок -->
+  <script>
+    $(document).ready(function() {
+
+      $('a').on('click', function(){
+        return false;
+      });
+    });
+  </script>
+
+
+<!-- Tags -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $("#myTags").tagit();
+    });
+</script>
+
 
 </body>
 </html>
