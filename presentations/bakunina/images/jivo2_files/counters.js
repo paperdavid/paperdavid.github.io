@@ -1,0 +1,1 @@
+var counters_json = {"widgets_count":"99176","partners_earned":"8 217 082.97"}
