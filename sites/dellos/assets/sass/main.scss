@@ -43,11 +43,36 @@
 	$size-wrapper-pad-tb: 6em;
 	$size-wrapper-pad-lr: 3em;
 
+
+//
+// VIDEO
+//
+
+video#bgvid {
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(.../video/sail.jpg) no-repeat;
+	background-size: cover;
+}
+
+//
+// End of VIDEo
+//
+
+
 /* Basic */
 
 
 	html, body {
-		background: _palette(bg);
 	}
 
 	body {
@@ -1364,35 +1389,35 @@
 /* Banner */
 
 	#banner {
-		background-attachment: fixed;
-		background-color: _palette(accent2);
-		background-image: url('../../images/banner.jpg');
-		background-position: center center;
-		background-size: cover;
+		// background-attachment: fixed;
+		// background-color: _palette(accent2);
+		// background-image: url('../../images/banner.jpg');
+		// background-position: center center;
+		// background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
 		min-height: 100vh;
 		position: relative;
 		text-align: center;
 		z-index: (_misc(max-spotlight) + 1);
 
-		&:before {
-			content: '';
-			display: inline-block;
-			height: 100vh;
-			vertical-align: middle;
-			width: 1%;
-		}
+		// &:before {
+		// 	content: '';
+		// 	display: inline-block;
+		// 	height: 100vh;
+		// 	vertical-align: middle;
+		// 	width: 1%;
+		// }
 
-		&:after {
-			@include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent)}, #{_palette(bg-transparent)})', 'url("images/overlay.png");'));
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+		// &:after {
+		// 	@include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent)}, #{_palette(bg-transparent)})', 'url("images/overlay.png");'));
+		// 	content: '';
+		// 	display: block;
+		// 	height: 100%;
+		// 	left: 0;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	width: 100%;
+		// }
 
 		.content {
 			display: inline-block;
@@ -1436,11 +1461,11 @@
 		}
 	}
 
-	body.is-touch {
-		#banner {
-			background-attachment: scroll;
-		}
-	}
+	// body.is-touch {
+	// 	#banner {
+	// 		background-attachment: scroll;
+	// 	}
+	// }
 
 /* Footer */
 
@@ -1547,13 +1572,13 @@
 				}
 			}
 
-		/* Banner */
+		// /* Banner */
 
-			#banner {
-				.content {
-					padding: $size-wrapper-pad-tb;
-				}
-			}
+		// 	#banner {
+		// 		.content {
+		// 			padding: $size-wrapper-pad-tb;
+		// 		}
+		// 	}
 
 		/* Footer */
 
@@ -1617,7 +1642,7 @@
 		/* Banner */
 
 			#banner {
-				background-attachment: scroll;
+				// background-attachment: scroll;
 
 				.goto-next {
 					height: 7em;
