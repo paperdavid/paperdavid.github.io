@@ -43,7 +43,9 @@
 	$size-wrapper-pad-tb: 6em;
 	$size-wrapper-pad-lr: 3em;
 
-
+div#map_canvas {
+	height: 450px;
+}
 
 
 .rounded {
@@ -1834,8 +1836,8 @@ video#bgvid {
 		$size-wrapper-pad-tb: 3.25em;
 		$size-wrapper-pad-lr: 1.5em;
 
-		iframe {
-			height: 200px;
+		div#map_canvas {
+			height: 250px;
 		}
 
 	video#bgvid {

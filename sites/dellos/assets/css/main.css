@@ -1184,6 +1184,9 @@ body {
 
   .\-1u\28xsmall\29 {
     margin-left: 8.3333333333%; } }
+div#map_canvas {
+  height: 450px; }
+
 .rounded {
   border-radius: 10px; }
 
@@ -2768,8 +2771,8 @@ body.landing #header {
   display: none; }
 
 @media screen and (max-width: 736px) {
-  iframe {
-    height: 200px; }
+  div#map_canvas {
+    height: 250px; }
 
   video#bgvid {
     display: none; }
