@@ -44,6 +44,154 @@
 	$size-wrapper-pad-lr: 3em;
 
 
+
+
+.rounded {
+	border-radius: 10px;
+}
+// Sprites
+
+.sprite {
+	width: 170px;
+	height: 80px;
+	background-image: url(/images/sprite.png);
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 auto 70px auto;
+
+	& h4{
+		padding-top: 80px;
+	}
+}
+// AZS
+#gazprom {
+	background-position: -15px -30px;
+}
+#lukoil {
+	background-position: -215px -30px;
+}
+#faeton {
+	background-position: -417px -30px;
+}
+
+#ptk {
+	background-position: -614px -30px;
+}
+#statoil {
+	background-position: -814px -30px;
+}
+#rosneft {
+	background-position: -15px -172px;
+}
+
+#shell {
+	background-position: -215px -172px;
+}
+#sng {
+	background-position: -415px -172px;
+}
+#neste {
+	background-position: -615px -172px;
+}
+
+//Магазины
+#netto {
+	background-position: -815px -172px;
+}
+#semya {
+	background-position: -1015px -313px;
+}
+#idea {
+	background-position: -1215px -313px;
+}
+
+#laym {
+	background-position: -1415px -313px;
+}
+#lend {
+	background-position: -1615px -313px;
+}
+#gast811 {
+	background-position: -1815px -313px;
+}
+
+#riomag {
+	background-position: -1015px -450px;
+}
+#sezon {
+	background-position: -1215px -450px;
+}
+#babylon {
+	background-position: -1415px -450px;
+}
+
+
+#plovdiv {
+	background-position: -1615px -450px;
+}
+#spar {
+	background-position: -1815px -450px;
+}
+#real {
+	background-position: -1015px -590px;
+}
+
+#norman {
+	background-position: -1215px -590px;
+}
+#bahetle {
+	background-position: -1415px -590px;
+}
+#polushka {
+	background-position: -1615px -590px;
+}
+#karusel {
+	background-position: -1815px -590px;
+}
+#perekrestok {
+	background-position: -1015px -727px;
+}
+
+// Аптеки
+#rigla {
+	background-position: -1215px -730px;
+}
+#edifarm {
+	background-position: -1415px -730px;
+}
+#lekrus {
+	background-position: -1615px -730px;
+}
+
+#zdorovie {
+	background-position: -1815px -730px;
+}
+#nevis {
+	background-position: -1015px -870px;
+}
+#fialka {
+	background-position: -1215px -870px;
+}
+
+#ozerki {
+	background-position: -1415px -870px;
+}
+#raduga {
+	background-position: -1615px -870px;
+}
+#pomosh {
+	background-position: -1815px -870px;
+}
+
+
+
+
+
+// 
+//
+// 
+
+
 //
 // VIDEO
 //
@@ -932,7 +1080,7 @@ video#bgvid {
 		}
 
 		&.special {
-			background-color: _palette(accent1);
+			background-color: _palette(accent09);
 			box-shadow: none;
 			color: _palette(fg-bold) !important;
 			border: 1px solid #fff !important;
@@ -1382,8 +1530,8 @@ video#bgvid {
 		}
 
 		#header {
-			background: _palette(accent1);
-			box-shadow: none;
+			background: _palette(accent09);
+			box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 			position: fixed;
 		}
 	}
@@ -1401,6 +1549,7 @@ video#bgvid {
 		position: relative;
 		text-align: center;
 		z-index: (_misc(max-spotlight) + 1);
+
 
 		&:before {
 			content: '';
@@ -1685,6 +1834,14 @@ video#bgvid {
 		$size-wrapper-pad-tb: 3.25em;
 		$size-wrapper-pad-lr: 1.5em;
 
+		iframe {
+			height: 200px;
+		}
+
+	video#bgvid {
+		display: none
+	}
+
 		/* Basic */
 
 			html, body {
@@ -1777,6 +1934,17 @@ video#bgvid {
 			#banner {
 				box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
 				min-height: calc(100vh - 44px);
+				background-attachment: fixed;
+				background-color: _palette(accent2);
+				background-position: center center;
+				background-size: cover;
+				box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
+				min-height: 100vh;
+				position: relative;
+				text-align: center;
+				z-index: (_misc(max-spotlight) + 1);
+				background-image: url(/video/sail.jpg);
+
 
 				&:before {
 					height: calc(100vh - 44px);
@@ -2034,3 +2202,9 @@ video#bgvid {
 			}
 
 	}
+
+
+
+	.empty {
+	padding-top: 0;
+}

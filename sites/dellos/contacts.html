@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dellos – Партнеры</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Dellos</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="#">Продукция</a></li>
+							<li><a href="partners.html">Партнеры</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="#" class="button special">Заказать</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1 empty">
+					
+						<div class="box alt">
+									<div class="row 50% uniform">
+										<div class="12u$">
+											<span class="fit">
+																<!-- Карта -->
+												<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>  
+												<script> 
+
+													var map;
+													var b5 = new google.maps.LatLng(59.9851356, 30.3993712);
+
+													var MY_MAPTYPE_ID = 'mystyle';
+
+													function initialize() {
+
+														var stylez =  [
+														{
+															featureType: "all",
+															elementType: "all",
+															stylers: [
+															{ "saturation": -100 }
+															]
+														}
+														];
+
+														var mapOptions = {
+															zoom: 16,
+															center: b5,
+															scrollwheel: false,
+															disableDoubleClickZoom: true,
+															mapTypeControl: true,
+															zoomControl: true,
+															zoomControlOptions: {
+																style: google.maps.ZoomControlStyle.SMALL
+															},
+															mapTypeControl: false,
+															mapTypeControlOptions: {
+																mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+															},
+															mapTypeId: MY_MAPTYPE_ID
+														};
+
+
+														map = new google.maps.Map(document.getElementById("map_canvas"),
+															mapOptions);
+
+														var image = '/images/pin.svg';
+														var beachMarker = new google.maps.Marker({
+															position: b5,
+															map: map,
+															icon: image
+														});
+
+														var styledMapOptions = {
+															name: "Чб"
+														};
+
+														var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
+
+														map.mapTypes.set(MY_MAPTYPE_ID, jayzMapType);
+													}
+												</script> 
+												<body onload="initialize()"> 
+													<div id="map_canvas" style="height: 450px; width:100%; margin-bottom: 30px;"></div> 
+												</body> 
+												<!-- END Карта -->
+												</span></div></div>
+
+
+<div class="container">
+						<div class="row 150%">
+							<div class="3u 12u$(medium)">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+											<h2>Контакты</h2>
+										</section>
+							</div>
+							<div class="9u$ 12u$(medium) important(medium)">
+
+								<!-- AZS -->
+									<section id="content">
+										<div class="row">
+											<div class="4u 12u$(medium)">
+											<h4>Адрес</h4>
+											<p>195271, г. Санкт-Петербург,<br>Кондратьевский пр. д.72, лит А</p>
+											</div>
+											<div class="4u 12u$(medium)">
+											<h4>Телефон</h4>
+											<p>+7 (812) 448-39-69<br>+7 (812) 448-39-69</p>
+											</div>
+											<div class="4u 12u$(medium)">
+											<h4>Почта</h4>
+											<p>ntd@ntd-spb.ru<br></p>
+											</div>
+										</div>
+										</section>
+										<hr>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="container">
+						<div class="row 150%">
+							<div class="3u 12u$(medium)">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+											<h2>Обратная связь</h2>
+										</section>
+							</div>
+							<div class="9u$ 12u$(medium) important(medium)">
+
+								<!-- AZS -->
+									<section id="content">
+										<div class="row">
+											<div class="4u 12u$(medium)">
+											<p>Если у вас возникли вопросы или вы хотите арендовать помещение, пишите нам. Чтобы написать нам письмо, заполните, пожалуйста, форму обратной связи.</p>
+											</div>
+											<div class="8u 12u$(medium)">
+					<form method="post" action="#" class="container 50%">
+							<div class="row uniform 50%">
+								<div class="12u 12u$(xsmall)">
+									<div class="select-wrapper">
+										<select type="category" name="email" id="category" placeholder="Выберите тему" />
+											<option value="1">Выберите тему</option>
+											<option value="2">Закупка</option>
+											<option value="3">Хочу бутылочку</option>
+											<option value="3">Тонны, тооннны!</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="12u 12u$(xsmall)"><textarea type="email" name="email" id="email" placeholder="Сообщение" /></textarea></div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Имя" /></div>
+								<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Телефон" /></div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Ваш email" /></div>
+								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Отправить" class="fit special" /></div>
+							</div>
+						</form>							
+											</div>
+										</div>
+										</section>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
