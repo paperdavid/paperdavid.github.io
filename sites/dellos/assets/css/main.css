@@ -1225,7 +1225,7 @@ a {
   color: #4CAF50;
   text-decoration: none; }
   a:hover {
-    color: #4CAF50 !important;
+    color: #fff !important;
     border-bottom-color: transparent; }
 
 strong, b {
@@ -2084,7 +2084,8 @@ input[type="button"],
   .button.special {
     background-color: #4CAF50;
     box-shadow: none;
-    color: #ffffff !important; }
+    color: #ffffff !important;
+    border: 1px solid #fff !important; }
     input[type="submit"].special:hover,
     input[type="reset"].special:hover,
     input[type="button"].special:hover,
@@ -2287,6 +2288,8 @@ body.is-touch .spotlight {
 /* Wrapper */
 .wrapper {
   padding: 6em 0 4em 0; }
+  .wrapper.style1 {
+    background: #272833; }
   .wrapper.style2 {
     background: #4CAF50; }
     .wrapper.style2 input[type="text"]:focus,
@@ -2466,9 +2469,9 @@ body.landing .dropotron.level-0 {
 body.landing #page-wrapper {
   padding-top: 0; }
 body.landing #header {
-  background: transparent;
+  background: #4CAF50;
   box-shadow: none;
-  position: absolute; }
+  position: fixed; }
 
 /* Banner */
 #banner {
@@ -2477,6 +2480,24 @@ body.landing #header {
   position: relative;
   text-align: center;
   z-index: 21; }
+  #banner:before {
+    content: '';
+    display: inline-block;
+    height: 100vh;
+    vertical-align: middle;
+    width: 1%; }
+  #banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(255, 255, 255, 0.05)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(255, 255, 255, 0.05)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(255, 255, 255, 0.05)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(255, 255, 255, 0.05)), url("images/overlay.png");;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
   #banner .content {
     display: inline-block;
     margin-right: 1%;
