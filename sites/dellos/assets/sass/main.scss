@@ -47,7 +47,6 @@ div#map_canvas {
 	height: 450px;
 }
 
-
 .rounded {
 	border-radius: 10px;
 }
@@ -200,20 +199,24 @@ div#map_canvas {
 
 video#bgvid {
 
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
-	height: auto;
+	height: 100vh;
 	z-index: -100;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: url(.../video/sail.jpg) no-repeat;
+	background: url(../../video/sail.jpg) no-repeat;
 	background-size: cover;
 }
 
+@media screen and (max-device-width: 800px) {
+body { background: url(../../video/sail.jpg) #000 no-repeat center center fixed; }
+#bgvid { display: none; }
+}
 //
 // End of VIDEo
 //
@@ -1501,6 +1504,10 @@ video#bgvid {
 						line-height: inherit;
 						outline: 0;
 
+						&:hover {
+							text-decoration: underline;
+						}
+
 						&.button {
 							height: 2em;
 							line-height: 2em;
@@ -1673,6 +1680,7 @@ video#bgvid {
 				font-size: 13pt;
 			}
 
+
 	}
 
 /* Large */
@@ -1747,6 +1755,9 @@ video#bgvid {
 
 		$size-wrapper-pad-tb: 4.5em;
 		$size-wrapper-pad-lr: 2.5em;
+
+
+
 
 		/* Basic */
 
@@ -2210,3 +2221,40 @@ video#bgvid {
 	.empty {
 	padding-top: 0;
 }
+
+
+h3, h4 {
+	margin-top: .5em;
+}
+
+.faq  {
+
+	li {
+		margin-bottom: 20px
+	}
+
+
+	span {
+		font-size: 14px
+	}
+
+}
+
+
+@media screen and (min-width: 768px) {
+	section.faq ul{
+		width: 40em;
+		margin: 0 auto;
+}
+
+}
+
+h1#logo {
+	padding: 10px 0;
+
+	img {
+		line-height: 61px;
+	}
+}
+
+

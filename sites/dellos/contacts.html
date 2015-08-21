@@ -6,7 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png" />		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="landing">
@@ -16,14 +25,15 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Dellos</a></h1>
+					<h1 id="logo"><a href="index.html"><img src="images/icons/logo.png" height="40" alt=""></a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Главная</a></li>
 							<li><a href="#">Продукция</a></li>
-							<li><a href="partners.html">Партнеры</a></li>
+							<li><a href="partners.html">Где купить</a></li>
+							<li><a href="faq.html">FAQ</a></li>
 							<li><a href="contacts.html">Контакты</a></li>
-							<li><a href="#" class="button special">Заказать</a></li>
+							<li><a href="#order" class="button special">Заказать</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -40,7 +50,7 @@
 												<script> 
 
 													var map;
-													var b5 = new google.maps.LatLng(59.9851356, 30.3993712);
+													var b5 = new google.maps.LatLng(59.986941,30.400278);
 
 													var MY_MAPTYPE_ID = 'mystyle';
 
@@ -116,11 +126,18 @@
 										<div class="row">
 											<div class="4u 12u$(medium)">
 											<h4>Адрес</h4>
-											<p>195271, г. Санкт-Петербург,<br>Кондратьевский пр. д.72, лит А</p>
+											<p>195271, г. Санкт-Петербург,
+											<br>Кондратьевский пр. д.72, лит А
+											<br>
+											<a href="https://maps.yandex.ru/-/CVgQIWpZ">Открыть Яндекс.Карты</a>
+											<br>
+											<a href="https://www.google.ru/maps/place/%D0%A0%D0%B5%D0%B0%D0%B2%D0%B8%D0%B7/@59.986941,30.400278,17z/data=!3m1!4b1!4m2!3m1!1s0x469633b3f6be56a1:0x42662421d1fea6ee!6m1!1e1?hl=ru">Открыть Google.Maps</a></p>
+
 											</div>
 											<div class="4u 12u$(medium)">
 											<h4>Телефон</h4>
-											<p><a href="tel:+78124483969">+7 (812) 448-39-69</a><br><a href="tel:+78124483969">+7 (812) 448-39-69</a></p>
+											<p><a href="tel:+78124483969">+7 (812) 448-39-69</a>
+											</p>
 											</div>
 											<div class="4u 12u$(medium)">
 											<h4>Почта</h4>
@@ -135,56 +152,47 @@
 				</div>
 
 
-
+				<div id="order"></div>
 				<div class="container">
 						<div class="row 150%">
 							<div class="3u 12u$(medium) important(medium)">
-
-								<!-- Sidebar -->
-									<section id="sidebar">
-											<h2>Обратная связь</h2>
-										</section>
+								<section id="sidebar">
+									<h2>Обратная связь</h2>
+								</section>
 							</div>
 							<div class="9u$ 12u$(medium)">
-
-								<!-- AZS -->
-									<section id="content">
-										<div class="row">
-											<div class="4u 12u$(medium)">
-											<p>Если у вас возникли вопросы или вы хотите арендовать помещение, пишите нам. Чтобы написать нам письмо, заполните, пожалуйста, форму обратной связи.</p>
-											</div>
-											<div class="8u 12u$(medium)">
-					<form method="post" action="#" class="container 50%">
-							<div class="row uniform 50%">
-								<div class="12u 12u$(xsmall)">
-									<div class="select-wrapper">
-										<select type="category" name="email" id="category" placeholder="Выберите тему" />
-											<option value="1">Выберите тему</option>
-											<option value="2">Закупка</option>
-											<option value="3">Хочу бутылочку</option>
-											<option value="3">Тонны, тооннны!</option>
-										</select>
-									</div>
+						<section id="content">
+							<div class="row">
+								<div class="4u 12u$(medium)">
+								<p>Если у вас возникли вопросы или вы хотите арендовать помещение, пишите нам. Чтобы написать нам письмо, заполните, пожалуйста, форму обратной связи.</p>
 								</div>
-							</div>
-							<div class="row uniform 50%">
-								<div class="12u 12u$(xsmall)"><textarea type="email" name="email" id="email" placeholder="Сообщение" /></textarea></div>
-							</div>
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Имя" /></div>
-								<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Телефон" /></div>
-							</div>
-							<div class="row uniform 50%">
-								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Ваш email" /></div>
-								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Отправить" class="fit special" /></div>
-							</div>
-						</form>							
+								<div class="8u 12u$(medium)">
+								<form method="post" action="#" class="container 50%">
+									<div class="row uniform 50%">
+										<div class="12u 12u$(xsmall)">
+											<div class="select-wrapper">
+												<select type="category" name="email" id="category" placeholder="Выберите тему" />
+													<option value="1">Выберите тему</option>
+													<option value="2">Заказ</option>
+													<option value="3">Оплата</option>
+													<option value="3">Другое</option>
+												</select>
 											</div>
 										</div>
-										</section>
-
-
-
+									</div>
+									<div class="row uniform 50%">
+										<div class="12u 12u$(xsmall)"><textarea type="email" name="email" id="email" placeholder="Сообщение" /></textarea></div>
+									</div>
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Имя" /></div>
+										<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Телефон" /></div>
+									</div>
+									<div class="row uniform 50%">
+										<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Ваш email" /></div>
+										<div class="4u$ 12u$(xsmall)"><input type="submit" value="Отправить" class="fit special" /></div>
+										</div>
+								</form>
+								</section>
 							</div>
 						</div>
 					</div>

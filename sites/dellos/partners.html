@@ -6,6 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -16,14 +26,15 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Dellos</a></h1>
+					<h1 id="logo"><a href="index.html"><img src="images/icons/logo.png" height="40" alt=""></a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Главная</a></li>
 							<li><a href="#">Продукция</a></li>
-							<li><a href="partners.html">Партнеры</a></li>
+							<li><a href="partners.html">Где купить</a></li>
+							<li><a href="faq.html">FAQ</a></li>
 							<li><a href="contacts.html">Контакты</a></li>
-							<li><a href="#" class="button special">Заказать</a></li>
+							<li><a href="#order" class="button special">Заказать</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -36,7 +47,7 @@
 							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
 						</header>
 						<div class="row 150%">
-							<div class="4u 12u$(medium)">
+							<div class="3u 12u$(medium)">
 
 								<!-- Sidebar -->
 									<section id="sidebar">
@@ -45,165 +56,206 @@
 											<p>Нашу продукцию вы сможете приобрести у наших партнеров ...... <br>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit.</p>
 										</section>
 							</div>
-							<div class="8u$ 12u$(medium) important(medium)">
-
-								<!-- AZS -->
-									<section id="content">
-										<h2>Автозаправки</h2>
-										<div class="row">
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="gazprom"><h4>Газпром Нефть</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="lukoil"><h4>Лукойл</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="faeton"><h4>Фаэтон</h4></div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="ptk"><h4>ПТК</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="statoil"><h4>Статойл</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="rosneft"><h4>Роснефть</h4></div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="shell"><h4>Shell</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="sng"><h4>Сургутнефтегаз</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="neste"><h4>Neste</h4></div>
-											</div>
-										</div>
-										</section>
-										<hr>
-
-
-
+							<div class="9u$ 12u$(medium) important(medium)">
 
 
 																		<!-- Сетевые -->
 									<section id="content">
 										<h2>Сетевые магазины</h2>
-										<div class="row">
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="netto"><h4>Нетто</h4></div>
+											<div class="row">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="karusel"><h4>Карусель</h4></div>
 											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="semya"><h4>7я Семья</h4></div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="perekrestok"><h4>Перекресток</h4></div>
 											</div>
-											<div class="4u 12u$(medium)">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="spar"><h4>SPAR</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="idea"><h4>Идея</h4></div>
 											</div>
 										</div>
 										<div class="row">
-											<div class="4u 12u$(medium)">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="semya"><h4>7я Семья</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="laym"><h4>Лайм</h4></div>
 											</div>
-											<div class="4u 12u$(medium)">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="polushka"><h4>Полушка</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="lend"><h4>Лэнд</h4></div>
 											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="gast811"><h4>Гастроном 811</h4></div>
+										</div>
+										<div class="row">											
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="bahetle"><h4>Бахетле</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="real"><h4>РеалЪ</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="plovdiv"><h4>Пловдив</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="netto"><h4>Нетто</h4></div>
 											</div>
 										</div>
 										<div class="row">
-											<div class="4u 12u$(medium)">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="gast811"><h4>Гастроном 811</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="riomag"><h4>Риомаг</h4></div>
 											</div>
-											<div class="4u 12u$(medium)">
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="sezon"><h4>Сезон</h4></div>
 											</div>
-											<div class="4u 12u$(medium)">
+
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="babylon"><h4>Super Babylon</h4></div>
 											</div>
-											</div>
-											<div class="row">
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="plovdiv"><h4>Пловдив</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="spar"><h4>SPAR</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="real"><h4>РеалЪ</h4></div>
-											</div>
-											</div>
-											<div class="row">
-											<div class="4u 12u$(medium)">
+										</div>
+										<div class="row">
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="norman"><h4>Норман</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="bahetle"><h4>Бахетле</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="polushka"><h4>Полушка</h4></div>
-											</div>
-											</div>
-											<div class="row">
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="karusel"><h4>Карусель</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="perekrestok"><h4>Перекресток</h4></div>
 											</div>
 										</div>
 										</section>
 										<hr>
 
 
+
+
+
+
+								<!-- AZS -->
+									<section id="content">
+										<h2>Автозаправки</h2>
+										<div class="row">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="gazprom"><h4>Газпром Нефть</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="lukoil"><h4>Лукойл</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="shell"><h4>Shell</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="neste"><h4>Neste</h4></div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="rosneft"><h4>Роснефть</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="ptk"><h4>ПТК</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="statoil"><h4>Статойл</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="kirishi"><h4>Кириши</h4></div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="faeton"><h4>Фаэтон</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="sng"><h4>Сургутнефтегаз</h4></div>
+												</div>
+											</div>
+										</section>
+										<hr>
+
+
+
+
+
 								<!-- Аптеки -->
 									<section id="content">
 										<h2>Сетевые аптеки</h2>
-										<div class="row">
-											<div class="4u 12u$(medium)">
+											<div class="row">
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="rigla"><h4>Ригла</h4></div>
 											</div>
-											<div class="4u 12u$(medium)">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="raduga"><h4>Аптега Радуга</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="pomosh"><h4>Первая помощь</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="ozerki"><h4>Аптека "Озерки"</h4></div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="zdorovie"><h4>Здоровые люди</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="nevis"><h4>Аптека Невис</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
+												<div class="sprite" id="fialka"><h4>Фиалка</h4></div>
+											</div>
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="edifarm"><h4>Эдифарм</h4></div>
 											</div>
-											<div class="4u 12u$(medium)">
+											</div>
+										<div class="row">
+											<div class="3u 12u$(medium)">
 												<div class="sprite" id="lekrus"><h4>Аптека Лекрус</h4></div>
 											</div>
 										</div>
-										<div class="row">
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="zdorovie"><h4>Здоровые люди</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="nevis"><h4>Аптека Невис</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="fialka"><h4>Фиалка</h4></div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="ozerki"><h4>Аптека "Озерки"</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="raduga"><h4>Аптега Радуга</h4></div>
-											</div>
-											<div class="4u 12u$(medium)">
-												<div class="sprite" id="pomosh"><h4>Первая помощь</h4></div>
-											</div>
-										</div>
 										</section>
-
-
-
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<!-- Обратная связь -->
+				<div id="order"></div>
+				<section id="five" class="wrapper style2 special fade">
+					<div class="container">
+						<header>
+							<h2>Мы на связи!</h2>
+							<p>Напишите нам, если у вас остались вопросы или вы хотите приобрести<br>нашу продукцию. Мы свяжемся в ближайшее время.</p>
+						</header>
+						<form method="post" action="#" class="container 50%">
+							<div class="row uniform 50%">
+								<div class="12u 12u$(xsmall)">
+									<div class="select-wrapper">
+										<select type="category" name="email" id="category" placeholder="Выберите тему" />
+											<option value="1">Выберите тему</option>
+											<option value="2">Заказ</option>
+											<option value="3">Оплата</option>
+											<option value="3">Другое</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="12u 12u$(xsmall)"><textarea type="email" name="email" id="email" placeholder="Сообщение" /></textarea></div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Имя" /></div>
+								<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Телефон" /></div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Ваш email" /></div>
+								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Отправить" class="fit special" /></div>
+							</div>
+						</form>
+					</div>
+				</section>
+
 
 			<!-- Footer -->
 				<footer id="footer">
