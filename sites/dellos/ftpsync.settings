@@ -7,9 +7,8 @@
 		"host": "92.53.125.196",
 		"username": "cq52164_david",  // or null for anonymous login
 		"password": "saqwer123",
-		"path": "/",
 
-		"upload_on_save": true, // set *false* if you do not want to upload on save!
+		"upload_on_save": false, // set *false* if you do not want to upload on save!
 
 		"port": 21,
 		// "tls": false,

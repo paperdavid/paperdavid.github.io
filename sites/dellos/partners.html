@@ -18,11 +18,11 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/contactform.js"></script>
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
-
-
 
 			<!-- Header -->
 				<header id="header">
@@ -228,30 +228,31 @@
 							<h2>Мы на связи!</h2>
 							<p>Напишите нам, если у вас остались вопросы или вы хотите приобрести<br>нашу продукцию. Мы свяжемся в ближайшее время.</p>
 						</header>
-						<form method="post" action="#" class="container 50%">
+				<form method="post" action="" id="ajax-contact-form" class="container 50%">
 							<div class="row uniform 50%">
 								<div class="12u 12u$(xsmall)">
 									<div class="select-wrapper">
-										<select type="category" name="email" id="category" placeholder="Выберите тему" />
+										<select type="text" name="type" id="category" placeholder="Выберите тему" />
 											<option value="1">Выберите тему</option>
-											<option value="2">Заказ</option>
-											<option value="3">Оплата</option>
-											<option value="3">Другое</option>
+											<option value="Zakaz">Заказ</option>
+											<option value="Oplata">Оплата</option>
+											<option value="Drugoe">Другое</option>
 										</select>
 									</div>
 								</div>
 							</div>
 							<div class="row uniform 50%">
-								<div class="12u 12u$(xsmall)"><textarea type="email" name="email" id="email" placeholder="Сообщение" /></textarea></div>
+								<div class="12u 12u$(xsmall)"><textarea type="text" name="mes" placeholder="Сообщение" /></textarea></div>
 							</div>
 							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Имя" /></div>
-								<div class="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Телефон" /></div>
+								<div class="6u 12u$(xsmall)"><input type="text" name="name" placeholder="Имя" /></div>
+								<div class="6u 12u$(xsmall)"><input type="text" name="tel" placeholder="Телефон" /></div>
 							</div>
 							<div class="row uniform 50%">
-								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Ваш email" /></div>
-								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Отправить" class="fit special" /></div>
+								<div class="8u 12u$(xsmall)"><input type="text" name="email" placeholder="Ваш email" /></div>
+								<div class="4u$ 12u$(xsmall)"><input type="submit" name="submit" value="Отправить" class="btn fit special" /></div>
 							</div>
+							<div id="note"></div>
 						</form>
 					</div>
 				</section>
@@ -274,7 +275,6 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
