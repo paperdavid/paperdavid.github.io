@@ -285,3 +285,11 @@ hr {
   border:0;
   margin: 5rem 0;
 }
+
+
+a.pure {
+  border:none;
+  font-size: 1.4rem;
+  vertical-align: top;
+  line-height: 40px;
+}
