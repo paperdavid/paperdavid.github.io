@@ -22,7 +22,7 @@ body { width: 85%;
        padding-left: 15%;
        font-family: font, Helvetica, sans-serif;
        background-color:#FDDC2F;
-       background: linear-gradient(0deg, #00b0d5 10%, #4593ff 90%);
+       background: linear-gradient(0deg, #00b0d5 30%, #4593ff 60%, #008cbc 90%);
        color: #222;
        max-width: 1400px;
        counter-reset: sidenote-counter; }
