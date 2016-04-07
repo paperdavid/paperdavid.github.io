@@ -305,6 +305,7 @@ a:hover {
   position: fixed;
   bottom: 5%;
   left: 5%;
+  width: 120px;
 }
 
 .arrows {
