@@ -295,3 +295,23 @@ a.pure {
   vertical-align: top;
   line-height: 40px;
 }
+
+a:hover {
+  color: #e43a15;
+  border-color: #e43a15;
+}
+
+.nav {
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+}
+
+.arrows {
+  padding-top: 8em;
+}
+
+.arrows p a{
+  border: none;
+}
+
