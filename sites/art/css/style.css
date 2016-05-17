@@ -7586,10 +7586,9 @@ button.close
     cursor: pointer;
     text-indent: -999px;
 
-    border: 1px solid #fff;
     border-radius: 10px;
     background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #ccc;
 }
 .carousel-indicators .active
 {
@@ -7597,7 +7596,7 @@ button.close
     height: 12px;
     margin: 0;
 
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 .carousel-caption
 {
@@ -8583,7 +8582,7 @@ footer p
 }
 .margin
 {
-    margin: 2em 0 0;
+    margin-top: 1em;
 }
 .margin__lg
 {
@@ -8759,6 +8758,21 @@ body,
 .carousel-info
 {
     color: #000;
+}
+.carousel-inner > .item > img
+{
+    height: 550px;
+}
+.carousel-inner
+{
+    overflow: visible;
+}
+.carousel-caption
+{
+    bottom: -80px;
+
+    color: #111;
+    text-shadow: none;
 }
 .chocolat-zoomable.chocolat-zoomed .chocolat-img
 {
